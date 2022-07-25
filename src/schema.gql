@@ -1,0 +1,20 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  _id: String!
+  name: String!
+  hobbies: [String!]!
+}
+
+type Query {
+  getPerson(_id: String!): User!
+  users(filters: ListPersonInput): [User!]!
+}
+
+input ListPersonInput {
+  _id: String
+  name: String
+  hobbies: [String!]
+}
